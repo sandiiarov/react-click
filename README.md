@@ -1,6 +1,6 @@
 # React Click
 
-Handle click outside with render-props comoponent
+Handle outside click with render-props comoponent
 
 ```javascript
 import ReactClick from './src';
