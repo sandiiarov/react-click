@@ -1,4 +1,4 @@
-# 🧙‍ React Click
+# React Click
 
 Handle click outside with render-props comoponent
 
