@@ -1,0 +1,26 @@
+{
+  "dist/react-click.umd.js": {
+    "bundled": 3345,
+    "minified": 1639,
+    "gzipped": 754
+  },
+  "dist/react-click.cjs.js": {
+    "bundled": 2416,
+    "minified": 1668,
+    "gzipped": 597
+  },
+  "dist/react-click.esm.js": {
+    "bundled": 2223,
+    "minified": 1531,
+    "gzipped": 548,
+    "treeshaked": {
+      "rollup": {
+        "code": 308,
+        "import_statements": 308
+      },
+      "webpack": {
+        "code": 1423
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "react-click",
+  "version": "0.0.1",
+  "description": "Handle click outside with moder render props approach",
+  "main": "dist/react-click.cjs.js",
+  "module": "dist/react-click.esm.js",
+  "scripts": {
+    "build:flow": "echo \"// @flow\n\nexport * from '../src'\" > dist/react-click.cjs.js.flow",
+    "build:code": "cross-env NODE_ENV=code rollup -c",
+    "build": "npm run clean && npm run build:code && npm run build:flow",
+    "build:f": "flow-copy-source src src",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandiiarov/react-click.git"
+  },
+  "author": "Alex Sandiiarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandiiarov/react-click/issues"
+  },
+  "homepage": "https://github.com/sandiiarov/react-click#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-flow": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
+    "cross-env": "^5.1.6",
+    "flow-bin": "^0.74.0",
+    "flow-copy-source": "^2.0.0",
+    "jest": "^23.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.60.1",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-size-snapshot": "^0.5.1",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.49",
+    "@babel/runtime": "^7.0.0-beta.49"
+  }
+}
